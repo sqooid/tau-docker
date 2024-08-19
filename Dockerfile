@@ -7,4 +7,5 @@ RUN curl https://get.tau.link/tau | sh
 
 WORKDIR /tau
 COPY ./start.sh ./
+RUN chmod +x ./start.sh
 CMD [ "./start.sh" ]
